@@ -14,12 +14,12 @@ public class Main {
         Author author1 = new Author(Identity.AUTHOR, "Lorem Ipsum", 1, null);
         librarySystem.addAuthor(author1);
 
-        Book book1 = new Book(104, "The Theory of Everything", author1, 34.99, Category.SCIENCE_FICTION, false);
-        Book book2 = new Book(105, "World History: A Brief Overview", author1, 39.99, Category.HISTORY, false);
-        Book book3 = new Book(106, "Introduction to Java", author1, 19.99, Category.EDUCATION, false);
-        Book book4 = new Book(107, "Artificial Intelligence: Concepts and Techniques", author1, 49.99, Category.SCIENCE_FICTION, false);
-        Book book5 = new History(108, "Ancient Civilizations", author1, 29.99, false, "Ancient");
-        Book book6 = new Book(109, "Data Structures and Algorithms in Python", author1, 44.99, Category.EDUCATION, false);
+        ScienceFiction book1 = new ScienceFiction(104, "The Theory of Everything", author1, 34.99, false);
+        History book2 = new History(105, "World History: A Brief Overview", author1, 39.99,false);
+        Book book3 = new Education(106, "Introduction to Java", author1, 19.99, false);
+        Book book4 = new ScienceFiction(107, "Artificial Intelligence: Concepts and Techniques", author1, 49.99, false);
+        Book book5 = new History(108, "Ancient Civilizations", author1, 29.99, false);
+        Book book6 = new Education(109, "Data Structures and Algorithms in Python", author1, 44.99, false);
 
 
         librarySystem.addBook(book1);
